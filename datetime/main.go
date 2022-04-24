@@ -12,6 +12,7 @@ func main() {
 	t := time.Date(2021, time.August, 26, 13, 0, 0, 0, time.UTC)
 	fmt.Println("I at lunch at: ", t)
 
+	//also : fmt.Println(t.Format("01/02/2006"))
 	fmt.Println(t.Format(time.ANSIC))
 
 	parsedTime, _ := time.Parse(time.ANSIC, "Thu Aug 26 13:00:00 2021")
